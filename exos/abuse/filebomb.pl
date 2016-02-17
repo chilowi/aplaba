@@ -2,7 +2,7 @@ author=chilowi
 text==
 Creation of an gigantic file!
 ==
-tester==
+code==
 
 with open("myfile", "w"):
 	while True:
