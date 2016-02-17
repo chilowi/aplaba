@@ -2,7 +2,7 @@ author=chilowi
 text==
 Emission of lots of requests towards the localhost website
 ==
-tester==
+code==
 
 URL = "http://localhost/"
 
