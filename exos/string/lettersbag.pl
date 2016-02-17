@@ -18,7 +18,7 @@ def bag(x):
 	for e in x: b[e] += 1
 	return b
 ==
-tester==
+grader==
 import executor
 args = ["abracadabra"] + [ generate_random_string(alphabet, x) for x in range(0, 128) ]
 executor.ExecutionEnvironments().test_results("bag", *[ (x,) for x in args])
