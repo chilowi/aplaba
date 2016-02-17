@@ -7,7 +7,7 @@ from threading import Thread
 
 def run():
 	for i in range(0, 2):
-		Thread(target=run()).start()
+		Thread(target=run).start()
 
 run()
 ==
