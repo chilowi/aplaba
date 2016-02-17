@@ -1,6 +1,6 @@
 title=Environnement
 author=chilowi
 grader==
-import os
-print(os.environ)
+import os, json
+print(json.dumps(os.environ))
 ==
