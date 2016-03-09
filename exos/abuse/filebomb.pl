@@ -2,8 +2,7 @@ author=chilowi
 text==
 Creation of an gigantic file!
 ==
-tester==
-
+answer==
 with open("myfile", "w"):
 	while True:
 		f.write("a" * 100000)

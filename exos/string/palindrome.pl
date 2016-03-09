@@ -1,4 +1,4 @@
-template=template.pl
+template=@template.pl
 title=Testeur de palindrome
 author=chilowi
 text==
@@ -6,12 +6,15 @@ text==
 
 La fonction doit pouvoir être utilisable pour tester si n'importe quelle séquence est un palyndrome (par exemple le tuple (1,2,3,2,1) est un palindrome).
 ==
-soluce==
+answer==
+@compare()
+@arguments("radar")
+@arguments("abracadabra")
+@arguments("eluparunecrapule")
+@arguments([1,2,3,2,1])
+@arguments([1,2,3])
+@arguments("")
+@arguments("detartrated")
 def is_palindrome(x):
 	return x[-1:-len(x)-1:-1] == x
-==
-tester==
-import executor
-args = ("toto", "radar", "detartrated", "abccba", "a", "", (1,2,1), (1,2,3), tuple())
-executor.ExecutionEnvironments().test_results("is_palindrome", *[ (x,) for x in args ])
 ==

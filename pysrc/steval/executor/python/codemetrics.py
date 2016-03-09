@@ -46,5 +46,3 @@ class CodeMetrics(object):
 		v = V()
 		v.visit(self.ast)
 		return max(v.heights.values()) + 1
-	
-	

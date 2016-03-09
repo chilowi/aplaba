@@ -2,12 +2,11 @@ author=chilowi
 text==
 Overconsumption of heap
 ==
-tester==
-
+answer==
 def run():
-	data = "a" * 1000000
+	data = "a" * 100000000
 	run()
-	run()
+	data[0] = "b"
 
 run()
 ==

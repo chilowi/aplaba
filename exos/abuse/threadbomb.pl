@@ -2,7 +2,7 @@ author=chilowi
 text==
 Implementation of a nice thread bomb!
 ==
-tester==
+answer==
 from threading import Thread
 
 def run():

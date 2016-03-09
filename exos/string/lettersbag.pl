@@ -1,4 +1,4 @@
-template=template.pl
+template=@template.pl
 title=Sac à lettres
 author=chilowi
 text==
@@ -11,15 +11,15 @@ Par exemple bag("abracadabra") devrait retourner le dictionnaire suivant :
 La fonction écrite devrait être généralisable pour toute séquence. Par exemple, on pourrait calculer bag((1,2,1,1,3)) qui retournerait :
 {1: 3, 2: 1, 3: 1}
 ==
-soluce==
+answer==
 import collections
+
+@arguments("abracadabra", complexity=len("abracadabra"))
+@arguments_generator(map(lambda x: [generator.generate_random_string(x),], range(0, 8) ), complexity_evaluator=lambda x: len(x[0]))
+@compare()
 def bag(x):
 	b = collections.defaultdict(int)
 	for e in x: b[e] += 1
 	return b
 ==
-tester==
-import executor
-args = ["abracadabra"] + [ generate_random_string(alphabet, x) for x in range(0, 128) ]
-executor.ExecutionEnvironments().test_results("bag", *[ (x,) for x in args])
-==
+
