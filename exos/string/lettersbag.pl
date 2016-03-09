@@ -22,4 +22,3 @@ def bag(x):
 	for e in x: b[e] += 1
 	return b
 ==
-
